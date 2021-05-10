@@ -71,12 +71,12 @@ Elige una opción:
 ### SOLUCION: 1.país, año, casos
 
 
-## EJERCICIO 2. Utilizando la tabla del ejercicio anterior 
+## EJERCICIO 2.  
 ```{r ejercicio2, echo = FALSE}
 kable(tabla4a) %>% 
   kable_styling(bootstrap_options = "striped", full_width = FALSE, position = "left")
 ```
-Tenemos que crear las columnas anio y casos en lugar de 1999 y 2000.
+Utilizando la misma tabla del ejercicio anterior, tenemos que crear las columnas anio y casos en lugar de 1999 y 2000.
 Completar los huecos de la siguiente instrucción pivot_longer.
 
 _____ %>% 
@@ -99,13 +99,13 @@ kable(tabla2) %>%
 ```
 Tenemos que :
 
-  1. Crear una **tabla2_nueva** 
+  1. Crear una **tabla2_nueva**.   
 
-  2. utilizando la **tabla2** 
+  2. utilizando la **tabla2**.   
+  
+  3. agregar columnas **poblacion** y **casos**.   
 
-  3. agregar columnas **poblacion** y **casos** 
-
-  4. Llevar la información de la columna **cuenta** a la columna que corresponda (según la columna **tipo**)
+  4. Llevar la información de la columna **cuenta** a la columna que corresponda (según la columna **tipo**).  
 
 Ordená las siguientes partes para obtener la función completa como corresponde: 
 
