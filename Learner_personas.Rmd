@@ -1,0 +1,38 @@
+---
+title: "Learner_personas"
+author: "Mónica Alonso"
+date: "10/5/2021"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+```{r setup, include=FALSE}
+library(tidyverse)
+library(datos)
+library(kableExtra)
+```
+
+# LEARNER PERSONA:  Ana López
+
+
+
+## Antecedentes generales (_General background_):
+
+Ana es una estudiante de Biología, está en 4to año de la carrera, y ama a los animales. 
+Su padre es veterinario, y tiene un negocio para mascotas. Por eso Ana desde chica estuvo en contacto con animales. Le gustan mucho los pájaros, con sus colores y su canto. Vive muy lejos de la universidad, pero tiene tantas ganas de aprender que nunca falta a sus clases, salvo algún caso de fuerza mayor. 
+
+
+## Conocimientos anteriores (_Relevant Experience_):
+
+Desde la secundaria, en sus clases de computación, aprendió a usar Excel, y para ayudar a su padre con la administración del negocio, armaba planillas de cálculo con algunas fórmulas sencillas. Desde ese momento está muy entusiasmada en utilizar la computadora como ayuda en la facultad y  en el trabajo de su padre.  
+En la facultad, se anotó en un taller de introducción a R y tuvo algunas clases de R base de nivel inicial.   
+
+## Necesidades que percibe (_Perceived Needs_):
+En la facultad tuvo como docente a un Doctor en Biología, investigador en el Conicet (Consejo Nacional de Investigaciones Científicas y Técnicas), que la incentivó para incursionar en la Ciencia de datos para aprender a generar modelos y realizar predicciones. Como el curso de R era sólo teórico,  no tuvo prácticas y le pareció muy difícil programar. Le sugirieron que Tidyverse era más fácil de aprender, y que tenía lindas visualizaciones, podía generar reportes rápidamente y con buena estética para una tesis.
+Ana esta muy interesada en aprender R y quiere usarlo como una herramienta para cuando tenga que hacer su tesis. Quizá también pueda ayudar a su padre a crecer en su negocio... 
+
+
+## Consideraciones Especiales (_Special considerations_)
+Ana es muy dulce, pero tímida y habla muy poco en clase. Tiene problemas en la vista, y trata de sentarse siempre en los primeros asientos. Le cuesta sociabilizar con sus compañeros.
+Al vivir lejos frecuentemente llega muy apurada y no logra concentrarse demasiado al principio de la clase.

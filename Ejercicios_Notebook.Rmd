@@ -1,0 +1,71 @@
+---
+title: "Ejercicios"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(datos)
+```
+
+## Ejercicio Datos
+
+```{r tabla4a_ej1y2}
+view(tabla4a)
+```
+
+
+### Ejercicio 1: 
+Esta tabla de cantidad de casos por pais/año tiene 3 columnas:  pais,  1999, 2000  
+Cuáles son las variables presentes en esta tabla?   
+Elige una opción:  
+
+1. país, año, casos  
+1. país, 1999, 2000  
+1. Afganistan, Brasil, China  
+1. país, año  
+
+
+## Pivot longer
+
+
+### Ejercicio 2: 
+Utilizando la misma tabla del ejercicio anterior: **tabla4a**, tenemos que crear las columnas:  
+  **anio**   
+  **casos**  
+para reemplazar las columnas 1999 y 2000.  
+
+Completar los espacios en blanco de la siguiente instrucción que llama a la función pivot_longer: 
+
+```{r pivot_longer}
+# ________ %>%   
+#   pivot_longer(c("1999", "2000"), names_to = ________, values_to = ________)  
+```
+
+## Pivot wider
+
+
+### Ejercicio 3: 
+Vamos a crear la **tabla2_nueva**  utilizando la  **tabla2**, para hacer los siguientes cambios: 
+
+1. agregar columnas **poblacion** y **casos**.    
+1. Llevar la información de la columna **cuenta** a la columna que corresponda (según la columna **tipo**).    
+
+Completa la llamada a la función, te dejamos escrito el inicio: 
+ordenar los trozos de la función pivot_wider que figuran aquí abajo, para poder completar la función del  chunk y poder procesarlo.
+
+tipo  
+cuenta  
+values_from    
+names_from     
+,    
+=    
+=    
+)    
+  
+```{r pivot_wider}
+#tabla_ancha <- tabla2 %>%  
+#  pivot_wider(
+```

@@ -1,0 +1,105 @@
+---
+title: "Ejercitación"
+author: "Mónica Alonso"
+date: "10/5/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(datos)
+```
+
+# Formative Assessments:
+
+
+*En los ejercicios usaremos las tablas del paquete(datos)*
+
+## EJERCICIO 1.  
+
+*CANTIDAD DE CASOS POR PAIS Y AÑO*
+```{r ejercicio1, echo = FALSE}
+knitr::kable(
+  tabla4a,
+  caption = "Tabla4a."
+)
+```
+Esta tabla de cantidad de casos por pais/año tiene 3 columnas:  pais,  1999, 2000  
+Cuáles son las variables presentes en esta tabla?   
+Elige una opción:  
+
+1. país, año, casos  
+1. país, 1999, 2000  
+1. Afganistan, Brasil, China  
+1. país, año  
+
+
+### SOLUCION: 1.país, año, casos
+
+
+## EJERCICIO 2. 
+
+**CANTIDAD DE CASOS POR PAIS Y AÑO**
+```{r ejercicio2, echo = FALSE}
+knitr::kable(
+  tabla4a,
+  caption = "Tabla4a"
+)
+```
+Utilizando la misma tabla del ejercicio anterior: **tabla4a**, tenemos que crear las columnas:  
+  **anio**   
+  **casos**  
+para reemplazar las columnas 1999 y 2000.  
+
+Completar los espacios en blanco de la siguiente instrucción que llama a la función pivot_longer:  
+
+________ %>%   
+  pivot_longer(c("1999", "2000"), names_to = ________, values_to = ________)  
+
+
+
+### SOLUCION:
+```{r ejercicio2_sol, echo = TRUE, eval = FALSE}
+tabla4a %>% 
+  pivot_longer(c("1999", "2000"), names_to = "anio", values_to = "casos")
+```
+
+
+
+## EJERCICIO 3. 
+  
+```{r echo = FALSE}
+knitr::kable(
+  tabla2,
+  caption = "Tabla2"
+)
+```
+Vamos a Crear la **tabla2_nueva**  utilizando la  **tabla2**, para hacer los siguientes cambios: 
+
+1. agregar columnas **poblacion** y **casos**.    
+1. Llevar la información de la columna **cuenta** a la columna que corresponda (según la columna **tipo**).    
+
+Completa la llamada a la función, te dejamos escrito el inicio: 
+
+```{r eval = FALSE}
+tabla2_nueva <- tabla2 %>% 
+ pivot_wider(
+```
+ 
+para hacerlo, solo tienes que ordenar los siguientes fragmentos para completar la función pivot_wider.  
+
+tipo, 
+
+names_from = 
+
+values_from = 
+
+cuenta)
+
+### SOLUCION
+
+```{r pivot_wider, echo=TRUE}
+tabla2_nueva <- tabla2 %>% 
+  pivot_wider(names_from = tipo, values_from = cuenta)
+  
+```

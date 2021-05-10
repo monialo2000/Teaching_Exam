@@ -1,0 +1,23 @@
+---
+title: "Concept_maps"
+author: "Mónica Alonso"
+date: "10/5/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(datos)
+library(kableExtra)
+```
+
+# Mapas Conceptuales (_Conceptual Map_)
+![](Mapa Conceptual.png)
+
+***
+
+![](Pivot_longer.png)
+
+***
+
+![](pivot_wider.png)
