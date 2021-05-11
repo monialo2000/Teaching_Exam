@@ -11,13 +11,7 @@ library(datos)
 library(kableExtra)
 ```
 
-# Mapas Conceptuales (_Conceptual Map_)
+# Mapa Conceptual (_Conceptual Map_)
 ![](Mapa Conceptual.png)
 
-***
 
-![](Pivot_longer.png)
-
-***
-
-![](pivot_wider.png)

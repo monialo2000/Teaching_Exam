@@ -12,7 +12,7 @@ library(datos)
 
 ## Ejercicio Datos
 
-```{r tabla4a_ej1y2}
+```{r tabla4a}
 view(tabla4a)
 ```
 
@@ -23,9 +23,9 @@ Cuáles son las variables presentes en esta tabla?
 Elige una opción:  
 
 1. país, año, casos  
-1. país, 1999, 2000  
-1. Afganistan, Brasil, China  
-1. país, año  
+2. país, 1999, 2000  
+3. Afganistan, Brasil, China  
+4. país, año  
 
 
 ## Pivot longer
